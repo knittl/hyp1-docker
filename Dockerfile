@@ -14,7 +14,7 @@ WORKDIR /home/student
 RUN yes|unminimize
 # RUN apt update && apt install -y git
 RUN apt update \
-	&& apt install -y man-db less nano psmisc curl \
+	&& apt install -y man-db less nano psmisc curl netbase \
 	&& rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
 
 USER student
