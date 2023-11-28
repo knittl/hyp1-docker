@@ -17,6 +17,7 @@ RUN apt update \
 	&& apt install -y man-db netbase less nano \
 	&& apt install -y psmisc \
 	&& apt install -y curl \
+	&& apt install -y telnet netcat \
 	&& apt install -y traceroute mtr-tiny \
 	&& rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
 
