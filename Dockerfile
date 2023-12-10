@@ -19,6 +19,9 @@ RUN apt update \
 	&& apt install -y curl \
 	&& apt install -y telnet netcat \
 	&& apt install -y traceroute mtr-tiny \
+	&& apt install -y dnsutils iproute2 \
+	&& apt install -y net-tools \
+	&& apt install -y tcpdump \
 	&& rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
 
 USER student
